@@ -29,7 +29,7 @@ Future integrations (coming in later sprints):
 
 talentfolio-backend/
 │
-├── app/\n
+├── app/ \n
 │ ├── main.py # FastAPI entry point \n
 │ ├── api/ # Routers (auth, users, projects, jobs) \n
 │ ├── core/ # Config, security utilities \n
@@ -103,6 +103,7 @@ http://localhost:8000/health
 Expected:
 
 { "status": "ok" }
+
 
 
 
