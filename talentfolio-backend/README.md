@@ -55,7 +55,7 @@ git clone https://github.com/Harshaapoorv/Talentfolio.git
 cd talentfolio-backend
 ```
 
-### **2. Create and activate a virtual environment
+### 2. Create and activate a virtual environment
 macOS / Linux:
 ```bash
 python3 -m venv venv
@@ -68,7 +68,7 @@ python -m venv venv
 .\venv\Scripts\activate
 ```
 
-### **3. Install dependencies
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
@@ -79,7 +79,7 @@ If you add new packages:
 pip freeze > requirements.txt
 ```
 
-### **4. Setup environment variables
+### 4. Setup environment variables
 
 Copy .env.example → .env:
 ```bash
@@ -89,7 +89,7 @@ cp .env.example .env
 
 Update values as needed (DB, secrets, etc.).
 
-### **5. Run the development server
+### 5. Run the development server
 ```bash
 uvicorn app.main:app --reload
 ```
@@ -99,7 +99,7 @@ The backend will run at:
 
 http://localhost:8000
 
-### **6. API Documentation
+### 6. API Documentation
 
 FastAPI provides built-in docs:
 
@@ -107,7 +107,7 @@ Swagger UI: http://localhost:8000/docs
 
 ReDoc: http://localhost:8000/redoc
 
-### **7. Health Check
+### 7. Health Check
 
 Test the basic health endpoint:
 
@@ -117,6 +117,7 @@ http://localhost:8000/health
 Expected:
 
 { "status": "ok" }
+
 
 
 
