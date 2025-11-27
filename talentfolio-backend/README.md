@@ -42,6 +42,23 @@ talentfolio-backend/
 ├── .env.example \n
 └── README.md \n
 
+```bash
+talentfolio-backend/
+│
+├── app/
+│   ├── main.py              # FastAPI entry point
+│   ├── api/                 # Routers (auth, users, projects, jobs)
+│   ├── core/                # Config, security utilities
+│   ├── models/              # SQLAlchemy ORM models
+│   ├── schemas/             # Pydantic request/response models
+│   ├── db/                  # DB session, base metadata
+│   └── __init__.py
+│
+├── requirements.txt
+├── .env.example
+└── README.md
+```
+
 ---
 
 ## 🛠️ Local Development Setup
@@ -103,6 +120,7 @@ http://localhost:8000/health
 Expected:
 
 { "status": "ok" }
+
 
 
 
