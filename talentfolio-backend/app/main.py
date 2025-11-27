@@ -1,6 +1,9 @@
 from fastapi import FastAPI # type: ignore
+from app.api import db_test
 
 app = FastAPI()
+
+app.include_router(db_test.router)
 
 @app.get("/health")
 def health_check():
