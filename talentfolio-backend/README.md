@@ -29,18 +29,18 @@ Future integrations (coming in later sprints):
 
 talentfolio-backend/
 │
-├── app/
-│ ├── main.py # FastAPI entry point
-│ ├── api/ # Routers (auth, users, projects, jobs)
-│ ├── core/ # Config, security utilities
-│ ├── models/ # SQLAlchemy ORM models
-│ ├── schemas/ # Pydantic request/response models
-│ ├── db/ # DB session, base metadata
-│ └── init.py
-│
-├── requirements.txt
-├── .env.example
-└── README.md
+├── app/\n
+│ ├── main.py # FastAPI entry point\n
+│ ├── api/ # Routers (auth, users, projects, jobs)\n
+│ ├── core/ # Config, security utilities\n
+│ ├── models/ # SQLAlchemy ORM models\n
+│ ├── schemas/ # Pydantic request/response models\n
+│ ├── db/ # DB session, base metadata\n
+│ └── init.py\n
+│\n
+├── requirements.txt\n
+├── .env.example\n
+└── README.md\n
 
 ---
 
@@ -103,4 +103,5 @@ http://localhost:8000/health
 Expected:
 
 { "status": "ok" }
+
 
