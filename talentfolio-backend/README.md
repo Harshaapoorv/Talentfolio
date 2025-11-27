@@ -27,21 +27,6 @@ Future integrations (coming in later sprints):
 
 ## 📁 Project Structure
 
-talentfolio-backend/
-│
-├── app/ \n
-│ ├── main.py # FastAPI entry point \n
-│ ├── api/ # Routers (auth, users, projects, jobs) \n
-│ ├── core/ # Config, security utilities \n
-│ ├── models/ # SQLAlchemy ORM models \n
-│ ├── schemas/ # Pydantic request/response models \n
-│ ├── db/ # DB session, base metadata \n
-│ └── init.py \n
-│ \n
-├── requirements.txt \n
-├── .env.example \n
-└── README.md \n
-
 ```bash
 talentfolio-backend/
 │
@@ -65,37 +50,49 @@ talentfolio-backend/
 
 ### **1. Clone the repository**
 
+```bash
 git clone https://github.com/Harshaapoorv/Talentfolio.git
 cd talentfolio-backend
+```
 
 ### **2. Create and activate a virtual environment
 macOS / Linux:
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
 Windows (PowerShell):
+```bash
 python -m venv venv
 .\venv\Scripts\activate
+```
 
 ### **3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 
 If you add new packages:
-
+```bash
 pip freeze > requirements.txt
+```
 
 ### **4. Setup environment variables
 
 Copy .env.example → .env:
-
+```bash
 cp .env.example .env
+```
 
 
 Update values as needed (DB, secrets, etc.).
 
 ### **5. Run the development server
+```bash
 uvicorn app.main:app --reload
+```
 
 
 The backend will run at:
@@ -120,6 +117,7 @@ http://localhost:8000/health
 Expected:
 
 { "status": "ok" }
+
 
 
 
